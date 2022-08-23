@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hai Kamu :)</title>
+   <link rel="shortcut icon" href="img/like.png" type="image/x-icon">
+  </head>
+  <style type="text/css">
+    *{
+      font-family: Arial
+    }
+  </style>
+  <body>
+ <h3 class="text-center mb-5">Haii Kamu....</h3>
+ <img style="display:block; margin:auto; width: 150px; height: 150px" class="ms-auto mb-5 " src="img/pentol.gif"></a>
+ <p class="input-group-text fw-bold container ms-auto"  >isi Mau/Gamau Ya</p>
+<div class="input-group container ">
+  <input type="text" class="form-control ms-auto" id="mau" placeholder="Maukah Kamu Menjadi Pacar Ku?" aria-label="Username" aria-describedby="addon-wrapping">
+  <input id="tombol" class="btn btn-primary" type="submit" value="Jawab">
+  
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+     document.getElementById("tombol").onclick = function (){
+      var mau = document.getElementById("mau").value;
+      var isi = "Mau";
+      var isi2 = "Gamau";
+
+      if (mau == isi) {
+        alert("Yeay...Selamat Kamu Berhasil Menjadi Ayang Aku ><")
+      }
+      else if (mau == isi2) {
+        alert("Gapapa Sumpah Gapapa")
+      }
+      else{
+        alert("Jawab Yang Bener Atuh...")
+      }
+     }
+    </script>
+  </body>
+</html>
