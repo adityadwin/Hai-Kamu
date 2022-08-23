@@ -17,28 +17,34 @@
     }
   </style>
   <body>
- <h3 class="text-center mb-5">Haii Kamu....</h3>
+ <h4 class="text-center mb-5">Hai Kamu...</h4>
  <img style="display:block; margin:auto; width: 150px; height: 150px" class="ms-auto mb-5 " src="img/pentol.gif"></a>
- <p class="input-group-text fw-bold container ms-auto"  >isi Mau/Gamau Ya</p>
-<div class="input-group container ">
-  <input type="text" class="form-control ms-auto" id="mau" placeholder="Maukah Kamu Menjadi Pacar Ku?" aria-label="Username" aria-describedby="addon-wrapping">
-  <input id="tombol" class="btn btn-primary" type="submit" value="Jawab">
+ <div class="card" style="width: 20rem; display:block; margin:auto;">
+  <div class="card-body">
+    <p class="input-group-text fw-bold container" style="display:block; margin:auto;" >isi mau/gamau</p>
+    <input type="text" class="form-control ms-auto" id="mau" placeholder="Maukah Kamu Menjadi Pacar Ku?" aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="display:block; margin:auto;" id="tombol" class="btn btn-primary" type="submit" value="Jawab">
   
+  </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript">
      document.getElementById("tombol").onclick = function (){
       var mau = document.getElementById("mau").value;
-      var isi = "Mau";
-      var isi2 = "Gamau";
+      var isi = "mau";
+      var isi2 = "gamau";
 
       if (mau == isi) {
-        alert("Yeay...Selamat Kamu Berhasil Menjadi Ayang Aku ><")
+        window.location.href = "happy.html";
+        alert("Duhh Ayang... Klik deh ada yang mau aku sampein")
       }
       else if (mau == isi2) {
-        alert("Gapapa Sumpah Gapapa")
+        window.location.href = "sad.html";
+        alert("Aku gapapa aku Ultramen ")
+        
       }
       else{
+        window.location.href = "index.html";
         alert("Jawab Yang Bener Atuh...")
       }
      }
